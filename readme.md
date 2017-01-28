@@ -7,7 +7,7 @@ See iis-server for example of a dockerfile build. items to be copied into the co
 
 
 # Building 
-'''
+```powershell
 PS C:\Users\lukem\Documents\GitHub\Docker-Samples\iis-server> docker build -t iis .
 Sending build context to Docker daemon 394.8 kB
 Step 1/7 : FROM microsoft/windowsservercore
@@ -31,17 +31,19 @@ Step 7/7 : CMD ping localhost -t
  ---> Using cache
  ---> 8e486df4a8a5
 Successfully built 8e486df4a8a5
-'''
+```
 
 # Running
-'''
+```powershell
 PS C:\Users\lukem\Documents\GitHub\Docker-Samples\iis-server> docker run iis
 
 Pinging b7dfeee83fa1 [::1] with 32 bytes of data:
 Reply from ::1: time=1ms
 Reply from ::1: time<1ms
 Reply from ::1: time=1ms
-'''
+```
 
 # Enter
-+ docker exec -i -t b7dfeee83fa1 powershell.exe
+```powershell
+docker exec -i -t b7dfeee83fa1 powershell.exe
+```
